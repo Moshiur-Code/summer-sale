@@ -1,0 +1,27 @@
+/* Font added here */
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+  /* Share Style */
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.border-test{
+    border: 2px solid red;
+}
+
+.banner-color{
+    background: #F9F6E2;
+}
+
+.common-color{
+    color: #E527B2;
+}
+
+.btn-common{
+    color: white;
+    background: #E527B2;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+}
