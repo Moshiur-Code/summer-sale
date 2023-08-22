@@ -29,7 +29,7 @@
     </section>
 
     <!-- card and cart section start here -->
-    <section class="container mx-auto mt-24 flex items-center justify-between">
+    <section class="container mx-auto mt-24 flex items-center justify-between ">
         
         <!-- Card Container -->
         <div>
@@ -104,14 +104,14 @@
 
 
         <!-- Cart Section-->
-        <div class="ml-8">
+        <div class="ml-8 mt-24">
             <!-- coupon section -->
             <div class="border-test card card-compact w-80 h-36 bg-base-100 shadow-xl">
                 <div class="card-body">
                     <h2 class="card-title">Have coupon?</h2>
                     <div class="form-control">
                         <div class="input-group">
-                            <input type="text" placeholder="Coupon code" class="input input-bordered" />
+                            <input id="coupon-id" type="text" placeholder="Coupon code" class="input input-bordered" />
                             <button class="text-white btn btn-secondary bg-[#E527B2]">Apply</button>
                         </div>
                     </div>
@@ -119,16 +119,16 @@
             </div>
 
             <div class="border-test mt-12 flex flex-col w-full">
-                <div id="selected-item" class="selected-item mt-6 font-medium grid h-20 card bg-base-100 rounded-box place-items-center">
-                    
+                <div id="selected-item" class="selected-item mt-6 font-medium grid h-24 card bg-base-100 rounded-box place-items-center">
+                    <ol id="order-list"></ol>
                 </div>
 
                 <div class="divider"></div>
 
                 <div class="font-medium grid h-20 card bg-base-100 rounded-box place-items-center">
                     <h6>Total Price: <span id="total-price">00</span></h6>
-                    <h6>Discount: <span>00</span></h6>
-                    <h5>Total: <span>00</span></h5>
+                    <h6 >Discount: <span id="discount-amount">00</span></h6>
+                    <h5>Total: <span id="pay-total">00</span></h5>
                 </div>
 
                 <div class="divider"></div>
@@ -140,6 +140,10 @@
     </section>
 
     <script src="./index.js"></script>
+
+    <script>
+
+    </script>
 </body>
 
 </html>
