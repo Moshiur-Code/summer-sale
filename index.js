@@ -34,4 +34,6 @@ function itemCard(target){
   document.getElementById('discount-amount').innerText = discountAmount;
 
   document.getElementById('pay-total').innerHTML = payPrice;
+
+  
 }

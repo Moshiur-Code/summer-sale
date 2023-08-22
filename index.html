@@ -15,7 +15,7 @@
     <!-- Banner Section Start here -->
     <section class="banner-color flex justify-center items-center gap-12">
         <!-- Banner Text -->
-        <div class="border-test text-center">
+        <div class="text-center">
             <p class="text-3xl font-medium mb-10">---SALE FEVER---</p>
             <h1 class="text-5xl font-bold mb-14">Purchase TK 200 or <br>
                 above & get <span class="common-color">20% off</span></h1>
@@ -23,7 +23,7 @@
             <button class="btn-common px-3 py-1 ml-1">SELL200</button>
         </div>
         <!-- Banner image -->
-        <div class="border-test">
+        <div>
             <img class="" src="./images/Summer 1.png" alt="summer image">
         </div>
     </section>
@@ -232,7 +232,7 @@
         <!-- Cart Section-->
         <div class="ml-8 mt-24">
             <!-- coupon section -->
-            <div class="border-test card card-compact w-80 h-36 bg-base-100 shadow-xl">
+            <div class="card card-compact w-80 h-36 bg-base-100 shadow-xl">
                 <div class="card-body">
                     <h2 class="card-title">Have coupon?</h2>
                     <div class="form-control">
@@ -244,7 +244,7 @@
                 </div>
             </div>
 
-            <div class="border-test mt-12 flex flex-col w-full">
+            <div class="mt-12 flex flex-col w-full">
                 <div id="selected-item" class="selected-item mt-6 font-medium grid h-24 card bg-base-100 rounded-box place-items-center">
                     <ol id="order-list"></ol>
                 </div>
@@ -259,7 +259,21 @@
 
                 <div class="divider"></div>
 
-                <button class="text-white btn btn-secondary bg-[#E527B2] w-full">Make Purchase</button>
+                <!-- <button class="text-white btn btn-secondary bg-[#E527B2] w-full">Make Purchase</button> -->
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn  bg-[#E527B2]" onclick="my_modal_5.showModal()">Make Purchase</button>
+                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <form method="dialog" class="modal-box">
+                    <img class="mx-auto" src="./images/congo.png" alt="">
+                    <h3 class="font-bold text-3xl text-center">Congratulations</h3>
+                    <p class="py-4 text-center">Your Purchase the product</p>
+                    
+                    <div class="modal-action items-center">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn bg-[#E527B2] text-center text-white ">Go Home</button>
+                    </div>
+                </form>
+                </dialog>                
             </div>
         </div>
 
