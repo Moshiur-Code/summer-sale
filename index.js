@@ -24,8 +24,7 @@ function itemCard(target){
 
   let discountAmount = total;
   let payPrice = total;
-
-  if(discountAmount >= 200) {
+ if(discountAmount >= 200) {
     discountAmount = (discountAmount * 20) / 100;
     payPrice = total - discountAmount;
   } else {
